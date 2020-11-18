@@ -1,0 +1,72 @@
+$lt-gray: #ddd;
+$background-dark: #1c1e7c;
+$background-light: #2629b3;
+$background-pale: #8587ff;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0px auto;
+	padding: $pad-up-dn $pad-left-right;
+}
+
+.row-header{
+    @include zero-margin(0px,0px);
+}
+
+.row-content {
+    @include zero-margin(50px,0px);
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+.footer{
+    background-color: $background-dark;
+    @include zero-margin(20px, 0px);
+    color:floralwhite;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: $background-light ;
+    color:floralwhite;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:floralwhite;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+    background: $background-pale
+}
+
+.navbar-dark {
+     background-color: $background-dark;
+}
+
+.tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.modal{
+    .modal-header {
+        background:$background-dark;
+        color:floralwhite;
+        button {
+            color:floralwhite;
+        }
+    }
+
+    .modal-body {
+        background-color: $background-pale;
+    }
+}
+
+.card{
+    color:floralwhite;
+}
